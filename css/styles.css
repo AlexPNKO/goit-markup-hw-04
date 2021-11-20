@@ -44,11 +44,15 @@ h3,
 p {
   margin: 0px;
 }
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 /*-------------------------------------STUDIO---------------*/
 /*----------------------------HEADER----------------------------*/
 .header {
   background-color: #ffffff;
-  border-bottom: 1px solid #eeeeee;
+  border: 1px solid #ececec;
 }
 .main-nav {
   display: flex;
@@ -115,9 +119,23 @@ p {
   color: #2196f3;
 }
 /*----------------------------HERO----------------------------*/
+.overlay {
+  max-width: 1600px;
+  min-height: 600px;
+  padding-top: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero-img.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 .hero {
-  padding: 200px 0;
-  background: #2f303a;
+  padding: 0px 0px 0px 0px;
   text-align: center;
 }
 .hero .title {
@@ -127,6 +145,7 @@ p {
   color: var(--hero-pre-title-color);
 }
 .hero .button {
+  margin-top: 30px;
   cursor: pointer;
   display: inline-block;
   border: 1px solid transparent;
@@ -142,10 +161,7 @@ p {
   line-height: 1.87;
 }
 /*----------------------------FEATURES----------------------------*/
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
+
 .section .hidden-title {
   position: absolute;
   white-space: nowrap;
@@ -183,10 +199,7 @@ p {
   color: var(--qualities-text-color);
 }
 /*----------------------------ABOUT----------------------------*/
-.about {
-  padding-top: 0px;
-}
-.about .title {
+.about-title {
   margin-top: 0px;
   margin-bottom: 0px;
   font-weight: 700;
@@ -295,9 +308,6 @@ footer .title {
 }
 /*-------------------------------------PORTFOLIO------------*/
 /*----------------------------FUNCTIONS----------------------------*/
-.section {
-  background: #ffffff;
-}
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
