@@ -180,6 +180,20 @@ p {
 .features-list .item + .item {
   margin-left: 30px;
 }
+.list-item::before {
+  margin-bottom: 30px;
+  display: block;
+  content: "";
+  width: 270px;
+  height: 120px;
+  background-size: contain;
+  background-color: #f5f4fa;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.list-item .antena::before {
+  background-image: url("../images/Group\ 1.svg");
+}
 .features-list .title {
   margin-top: 0px;
   margin-bottom: 10px;
