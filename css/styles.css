@@ -186,13 +186,14 @@ p {
   content: "";
   width: 270px;
   height: 120px;
+  background-image: url(../images/anten.img.svg);
   background-size: contain;
   background-color: #f5f4fa;
   background-repeat: no-repeat;
   background-position: center;
 }
-.list-item .antena::before {
-  background-image: url("../images/Group\ 1.svg");
+.list-item .antena {
+  background-image: url();
 }
 .features-list .title {
   margin-top: 0px;
