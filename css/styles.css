@@ -289,6 +289,29 @@ p {
   padding-top: 30px;
   padding-bottom: 30px;
 }
+.soc-net {
+  display: flex;
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+.soc-net .button {
+  padding: 0px;
+  border: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: #afb1b8;
+  background-color: #ffffff;
+}
+.soc-net .button:hover {
+  color: #ffffff;
+  background-color: #2196f3;
+}
+.button-icon {
+  fill: currentColor;
+}
+
 /*----------------------------ADRESS----------------------------*/
 .footer {
   padding: 60px 0;
