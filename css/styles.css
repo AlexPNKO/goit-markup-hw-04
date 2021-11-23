@@ -311,7 +311,13 @@ p {
 .button-icon {
   fill: currentColor;
 }
-
+/*----------------------------CLIENTS----------------------------*/
+.clients .list {
+  display: flex;
+}
+.clients .list .item + .item {
+  margin-left: 30px;
+}
 /*----------------------------ADRESS----------------------------*/
 .footer {
   padding: 60px 0;
