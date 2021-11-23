@@ -247,7 +247,7 @@ p {
 .team {
   background: #f5f4fa;
 }
-.team-title {
+.team .title {
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -256,19 +256,21 @@ p {
   letter-spacing: 0.03em;
   color: var(--team-title-color);
 }
-.team-list {
+.team .list {
   display: flex;
 }
-.team-list .item {
+.team .list .item {
+  width: 270px;
+  height: 428px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.team-list .item + .item {
+.team .list .item + .item {
   margin-left: 30px;
 }
-.team-list .title {
+.team .list .title {
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -277,7 +279,7 @@ p {
   letter-spacing: 0.03em;
   color: var(--employe-title-color);
 }
-.team-list .text {
+.team .list .text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
@@ -314,6 +316,32 @@ p {
 /*----------------------------CLIENTS----------------------------*/
 .clients .list {
   display: flex;
+}
+.clients .button {
+  color: #afb1b8;
+  background-color: #ffffff;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.clients .button:hover {
+  color: #2196f3;
+  background-color: #ffffff;
+  border: 1px solid #2196f3;
+}
+.button-icon {
+  fill: currentColor;
+  padding: 16px 32px;
+}
+
+.clients .list .item {
+  display: block;
+  content: "";
+  width: 170px;
+  height: 92px;
+  background-size: contain;
+  background-position: center;
+  background-color: #f5f4fa;
 }
 .clients .list .item + .item {
   margin-left: 30px;
