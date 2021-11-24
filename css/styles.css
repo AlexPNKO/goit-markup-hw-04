@@ -180,8 +180,7 @@ p {
 .features-list {
   display: flex;
 }
-.features-list .item::before {
-  margin-bottom: 30px;
+.features-list .image::before {
   display: block;
   content: "";
   height: 120px;
@@ -190,24 +189,12 @@ p {
   background-position: center;
   background-color: #f5f4fa;
 }
-.image-antena::before {
-  background-image: url(../images/anten.svg);
-}
-.image-clock::before {
-  background-image: url(../images/clock.svg);
-}
-.image-diagram::before {
-  background-image: url(../images/diagram.svg);
-}
-.image-astronaut::before {
-  background-image: url(../images/astronaut.svg);
-}
 .features-list .item + .item {
   margin-left: 30px;
 }
 
 .features-list .title {
-  margin-top: 0px;
+  margin-top: 30px;
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
