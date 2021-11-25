@@ -256,12 +256,7 @@ p {
   display: flex;
 }
 .team .list .item {
-  width: 270px;
-  height: 428px;
   background: #ffffff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
 }
 .team .list .item + .item {
   margin-left: 30px;
@@ -276,6 +271,7 @@ p {
   color: var(--employe-title-color);
 }
 .team .list .text {
+  margin-bottom: 16px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
@@ -286,31 +282,55 @@ p {
 .team .employe {
   padding-top: 30px;
   padding-bottom: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
-
-.team .button {
-  padding: 0px;
-  border: none;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  color: #afb1b8;
-  background-color: #ffffff;
+.soc-list {
+  display: flex;
+  justify-content: center;
 }
-.team .button:hover {
-  color: #ffffff;
-  background-color: #2196f3;
-}
-.team .icon {
+.soc-list .icon {
   fill: currentColor;
 }
-.team .item + .item {
+.soc-list .list-item {
+  width: 44px;
+  height: 44px;
+}
+.soc-list .list-item + .list-item {
   margin-left: 10px;
+}
+.soc-list .link {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  color: #afb1b8;
+}
+.soc-list .link:hover,
+.soc-list .link:focus {
+  background-color: #2196f3;
+  color: #ffffff;
 }
 
 /*----------------------------CLIENTS----------------------------*/
 .clients .list {
   display: flex;
+}
+.clients-title {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--about-title-color);
+  margin-bottom: 50px;
 }
 .clients .button {
   color: #afb1b8;
@@ -345,9 +365,12 @@ p {
 .footer {
   padding: 60px 0;
   background: #2f303a;
+  display: flex;
 }
+
 .adress .container {
   padding-top: 30px;
+  display: flex;
 }
 footer .title {
   font-style: normal;
@@ -361,7 +384,6 @@ footer .title {
 .footer .title-studio {
   color: #ffffff;
 }
-
 .adress-list .item {
   margin-top: 20px;
   margin-bottom: 0px;
@@ -380,6 +402,46 @@ footer .title {
 
 .adress-list .item + .item {
   margin-top: 9px;
+}
+
+.soc-link .second-title {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.soc-list-footer {
+  display: flex;
+}
+.soc-list-footer .icon {
+  fill: currentColor;
+}
+.soc-list-footer .list-item {
+  width: 44px;
+  height: 44px;
+}
+.soc-list-footer .list-item + .list-item {
+  margin-left: 10px;
+}
+.soc-list-footer .link {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+.soc-list-footer .link:hover,
+.soc-list-footer .link:focus {
+  background-color: #2196f3;
+  color: #ffffff;
 }
 /*-------------------------------------PORTFOLIO------------*/
 /*----------------------------FUNCTIONS----------------------------*/
@@ -445,9 +507,12 @@ footer .title {
 .all-list .feature {
   padding: 20px 24px;
   background: #ffffff;
+
+  border-radius: 0px 0px 4px 4px;
+}
+.all-list .item:hover {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
 }
 .all-list .title {
   font-weight: 700;
