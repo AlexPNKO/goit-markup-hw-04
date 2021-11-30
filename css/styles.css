@@ -484,6 +484,11 @@ p {
   position: fixed;
   top: 0;
   left: 0;
+  transition: opacity 250ms, visibility 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdrop.is-hidden .modal {
+  transform: scale(1.5) rotate(270deg);
 }
 .modal {
   width: 528px;
@@ -495,7 +500,9 @@ p {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: scale(1) rotate(0) translate(-50%, -50%);
+  transition: transform 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-close {
   position: absolute;
@@ -594,9 +601,10 @@ p {
   line-height: 1.5;
   padding: 40px 30px;
   background-color: rgba(33, 150, 243, 0.9);
-  height: 100%;
+  height: 101%;
   transform: translateY(100%);
   transition: transform 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .projects .feature {
   padding: 20px 24px;
